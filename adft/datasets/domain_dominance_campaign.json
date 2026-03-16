@@ -1,0 +1,2417 @@
+{
+  "CaseMetadata": {
+    "name": "domain_dominance_campaign",
+    "purpose": "end_to_end_ad_campaign_validation",
+    "expected_rules": [
+      "AUTH-001",
+      "KERB-001",
+      "AUTH-002",
+      "PRIV-001",
+      "COMP-001",
+      "KERB-003"
+    ]
+  },
+  "Events": [
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:00:00Z",
+      "TargetUserName": "user00",
+      "IpAddress": "10.10.20.10",
+      "WorkstationName": "WS-USER-00",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:01:00Z",
+      "TargetUserName": "user01",
+      "IpAddress": "10.10.20.11",
+      "WorkstationName": "WS-USER-01",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:02:00Z",
+      "TargetUserName": "user02",
+      "IpAddress": "10.10.20.12",
+      "WorkstationName": "WS-USER-02",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:03:00Z",
+      "TargetUserName": "user03",
+      "IpAddress": "10.10.20.13",
+      "WorkstationName": "WS-USER-03",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:04:00Z",
+      "TargetUserName": "user04",
+      "IpAddress": "10.10.20.14",
+      "WorkstationName": "WS-USER-04",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:05:00Z",
+      "TargetUserName": "user05",
+      "IpAddress": "10.10.20.15",
+      "WorkstationName": "WS-USER-05",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:06:00Z",
+      "TargetUserName": "user06",
+      "IpAddress": "10.10.20.16",
+      "WorkstationName": "WS-USER-06",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:07:00Z",
+      "TargetUserName": "user07",
+      "IpAddress": "10.10.20.17",
+      "WorkstationName": "WS-USER-07",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:08:00Z",
+      "TargetUserName": "user08",
+      "IpAddress": "10.10.20.18",
+      "WorkstationName": "WS-USER-08",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:09:00Z",
+      "TargetUserName": "user09",
+      "IpAddress": "10.10.20.19",
+      "WorkstationName": "WS-USER-09",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:10:00Z",
+      "TargetUserName": "user10",
+      "IpAddress": "10.10.20.20",
+      "WorkstationName": "WS-USER-10",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:11:00Z",
+      "TargetUserName": "user11",
+      "IpAddress": "10.10.20.21",
+      "WorkstationName": "WS-USER-11",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:12:00Z",
+      "TargetUserName": "user12",
+      "IpAddress": "10.10.20.22",
+      "WorkstationName": "WS-USER-12",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:13:00Z",
+      "TargetUserName": "user13",
+      "IpAddress": "10.10.20.23",
+      "WorkstationName": "WS-USER-13",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:14:00Z",
+      "TargetUserName": "user14",
+      "IpAddress": "10.10.20.24",
+      "WorkstationName": "WS-USER-14",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:15:00Z",
+      "TargetUserName": "user15",
+      "IpAddress": "10.10.20.25",
+      "WorkstationName": "WS-USER-15",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:16:00Z",
+      "TargetUserName": "user16",
+      "IpAddress": "10.10.20.26",
+      "WorkstationName": "WS-USER-16",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:17:00Z",
+      "TargetUserName": "user17",
+      "IpAddress": "10.10.20.27",
+      "WorkstationName": "WS-USER-17",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:18:00Z",
+      "TargetUserName": "user18",
+      "IpAddress": "10.10.20.28",
+      "WorkstationName": "WS-USER-18",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:19:00Z",
+      "TargetUserName": "user19",
+      "IpAddress": "10.10.20.29",
+      "WorkstationName": "WS-USER-19",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:20:00Z",
+      "TargetUserName": "user20",
+      "IpAddress": "10.10.20.30",
+      "WorkstationName": "WS-USER-20",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:21:00Z",
+      "TargetUserName": "user21",
+      "IpAddress": "10.10.20.31",
+      "WorkstationName": "WS-USER-21",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:22:00Z",
+      "TargetUserName": "user22",
+      "IpAddress": "10.10.20.32",
+      "WorkstationName": "WS-USER-22",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:23:00Z",
+      "TargetUserName": "user23",
+      "IpAddress": "10.10.20.33",
+      "WorkstationName": "WS-USER-23",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:24:00Z",
+      "TargetUserName": "user24",
+      "IpAddress": "10.10.20.34",
+      "WorkstationName": "WS-USER-24",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:25:00Z",
+      "TargetUserName": "user25",
+      "IpAddress": "10.10.20.35",
+      "WorkstationName": "WS-USER-25",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:26:00Z",
+      "TargetUserName": "user26",
+      "IpAddress": "10.10.20.36",
+      "WorkstationName": "WS-USER-26",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:27:00Z",
+      "TargetUserName": "user27",
+      "IpAddress": "10.10.20.37",
+      "WorkstationName": "WS-USER-27",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:28:00Z",
+      "TargetUserName": "user28",
+      "IpAddress": "10.10.20.38",
+      "WorkstationName": "WS-USER-28",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:29:00Z",
+      "TargetUserName": "user29",
+      "IpAddress": "10.10.20.39",
+      "WorkstationName": "WS-USER-29",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:30:00Z",
+      "TargetUserName": "user30",
+      "IpAddress": "10.10.20.40",
+      "WorkstationName": "WS-USER-30",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:31:00Z",
+      "TargetUserName": "user31",
+      "IpAddress": "10.10.20.41",
+      "WorkstationName": "WS-USER-31",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:32:00Z",
+      "TargetUserName": "user32",
+      "IpAddress": "10.10.20.42",
+      "WorkstationName": "WS-USER-32",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:33:00Z",
+      "TargetUserName": "user33",
+      "IpAddress": "10.10.20.43",
+      "WorkstationName": "WS-USER-33",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:34:00Z",
+      "TargetUserName": "user34",
+      "IpAddress": "10.10.20.44",
+      "WorkstationName": "WS-USER-34",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:35:00Z",
+      "TargetUserName": "user35",
+      "IpAddress": "10.10.20.45",
+      "WorkstationName": "WS-USER-35",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:36:00Z",
+      "TargetUserName": "user36",
+      "IpAddress": "10.10.20.46",
+      "WorkstationName": "WS-USER-36",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:37:00Z",
+      "TargetUserName": "user37",
+      "IpAddress": "10.10.20.47",
+      "WorkstationName": "WS-USER-37",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:38:00Z",
+      "TargetUserName": "user38",
+      "IpAddress": "10.10.20.48",
+      "WorkstationName": "WS-USER-38",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T22:39:00Z",
+      "TargetUserName": "user39",
+      "IpAddress": "10.10.20.49",
+      "WorkstationName": "WS-USER-39",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:45:00Z",
+      "TargetUserName": "helpdesk00",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:46:00Z",
+      "TargetUserName": "helpdesk01",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:47:00Z",
+      "TargetUserName": "helpdesk02",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:48:00Z",
+      "TargetUserName": "helpdesk03",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:49:00Z",
+      "TargetUserName": "helpdesk04",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:50:00Z",
+      "TargetUserName": "helpdesk05",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:51:00Z",
+      "TargetUserName": "helpdesk06",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:52:00Z",
+      "TargetUserName": "helpdesk07",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:53:00Z",
+      "TargetUserName": "helpdesk08",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:54:00Z",
+      "TargetUserName": "helpdesk09",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:55:00Z",
+      "TargetUserName": "helpdesk10",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:56:00Z",
+      "TargetUserName": "helpdesk11",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:57:00Z",
+      "TargetUserName": "helpdesk12",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:58:00Z",
+      "TargetUserName": "helpdesk13",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-11T22:59:00Z",
+      "TargetUserName": "helpdesk14",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:00Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:01Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:02Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:03Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:04Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:05Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:06Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:07Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:08Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:09Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:10Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:11Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:12Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:13Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:14Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:15Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:16Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:17Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:18Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:19Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:20Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:21Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:22Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:23Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:24Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:25Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:26Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:27Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:28Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:29Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:30Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:31Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:32Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:33Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:34Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:35Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:36Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:37Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:38Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:39Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:40Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:41Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:42Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:43Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:44Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:45Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:46Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:47Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:48Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:49Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:50Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:51Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:52Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:53Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:54Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:55Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:56Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:57Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:58Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:05:59Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:00Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:01Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:02Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:03Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:04Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:05Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:06Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:07Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:08Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:09Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:10Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:11Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:12Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:13Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:14Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:15Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:16Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:17Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:18Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:19Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:20Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:21Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:22Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:23Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:24Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:25Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:26Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:27Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:28Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:29Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:30Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:31Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:32Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:33Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:34Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:35Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:36Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:37Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:38Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:39Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:40Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:41Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:42Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:43Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:44Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:45Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:46Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:47Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:48Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:49Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:50Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:51Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:52Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:53Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:54Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:55Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:56Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:57Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:58Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:06:59Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:00Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:01Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:02Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:03Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:04Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:05Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:06Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:07Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:08Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:09Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:10Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:11Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:12Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:13Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:14Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:15Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:16Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:17Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:18Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:19Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:20Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:21Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:22Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:23Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:24Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:25Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:26Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:27Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:28Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:29Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:30Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:31Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:32Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:33Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:34Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:35Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:36Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:37Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:38Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:39Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:40Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:41Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:42Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:43Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:44Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:45Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:46Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:47Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:48Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:49Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:50Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:51Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:52Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:53Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:54Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:55Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:56Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:57Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:58Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:07:59Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x17",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T23:32:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "SRV-FS01.corp.local",
+      "LogonType": 3
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T23:33:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.121",
+      "WorkstationName": "WS-STAGE01",
+      "Computer": "SRV-BACKUP01.corp.local",
+      "LogonType": 3
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T23:34:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.122",
+      "WorkstationName": "SRV-FS01",
+      "Computer": "DC01.corp.local",
+      "LogonType": 3
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T23:37:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "LogonType": 10
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T23:38:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local",
+      "LogonType": 10
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-11T23:39:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-11T23:40:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4728,
+      "TimeCreated": "2026-03-11T23:42:00Z",
+      "SubjectUserName": "backupadmin",
+      "MemberName": "backupadmin",
+      "TargetUserName": "Domain Admins",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4697,
+      "TimeCreated": "2026-03-11T23:44:00Z",
+      "SubjectUserName": "backupadmin",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local",
+      "NewProcessName": "C:\\Windows\\Temp\\beacon_service.exe"
+    },
+    {
+      "EventID": 7045,
+      "TimeCreated": "2026-03-11T23:45:00Z",
+      "SubjectUserName": "SYSTEM",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local",
+      "EventData": {
+        "ServiceName": "mssecsvc2.0",
+        "ImagePath": "C:\\Windows\\Temp\\mssecsvc.exe"
+      }
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T23:46:00Z",
+      "TargetUserName": "backupadmin",
+      "ServiceName": "krbtgt/corp.local",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 1102,
+      "TimeCreated": "2026-03-11T23:48:00Z",
+      "SubjectUserName": "backupadmin",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    }
+  ]
+}

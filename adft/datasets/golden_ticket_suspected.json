@@ -1,0 +1,26 @@
+{
+  "CaseMetadata": {
+    "name": "golden_ticket_suspected"
+  },
+  "Events": [
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-11T08:00:00Z",
+      "TargetUserName": "backupadmin",
+      "ServiceName": "krbtgt/corp.local",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.10.10.99",
+      "WorkstationName": "WS-ATTACK03",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-11T08:02:00Z",
+      "TargetUserName": "backupadmin",
+      "LogonType": 3,
+      "IpAddress": "10.10.10.99",
+      "WorkstationName": "WS-ATTACK03",
+      "Computer": "DC01.corp.local"
+    }
+  ]
+}

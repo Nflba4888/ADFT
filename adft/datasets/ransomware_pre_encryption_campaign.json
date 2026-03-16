@@ -1,0 +1,1681 @@
+{
+  "CaseMetadata": {
+    "name": "ransomware_pre_encryption_campaign",
+    "purpose": "impact_and_pre_encryption_validation",
+    "expected_rules": [
+      "RANS-AVSTOP",
+      "RANS-VSS",
+      "RANS-4663",
+      "PERS-7045",
+      "COMP-001"
+    ]
+  },
+  "Events": [
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:00:00Z",
+      "TargetUserName": "user00",
+      "IpAddress": "10.10.30.10",
+      "WorkstationName": "WS-BIZ-00",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:01:00Z",
+      "TargetUserName": "user01",
+      "IpAddress": "10.10.30.11",
+      "WorkstationName": "WS-BIZ-01",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:02:00Z",
+      "TargetUserName": "user02",
+      "IpAddress": "10.10.30.12",
+      "WorkstationName": "WS-BIZ-02",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:03:00Z",
+      "TargetUserName": "user03",
+      "IpAddress": "10.10.30.13",
+      "WorkstationName": "WS-BIZ-03",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:04:00Z",
+      "TargetUserName": "user04",
+      "IpAddress": "10.10.30.14",
+      "WorkstationName": "WS-BIZ-04",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:05:00Z",
+      "TargetUserName": "user05",
+      "IpAddress": "10.10.30.15",
+      "WorkstationName": "WS-BIZ-05",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:06:00Z",
+      "TargetUserName": "user06",
+      "IpAddress": "10.10.30.16",
+      "WorkstationName": "WS-BIZ-06",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:07:00Z",
+      "TargetUserName": "user07",
+      "IpAddress": "10.10.30.17",
+      "WorkstationName": "WS-BIZ-07",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:08:00Z",
+      "TargetUserName": "user08",
+      "IpAddress": "10.10.30.18",
+      "WorkstationName": "WS-BIZ-08",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:09:00Z",
+      "TargetUserName": "user09",
+      "IpAddress": "10.10.30.19",
+      "WorkstationName": "WS-BIZ-09",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:10:00Z",
+      "TargetUserName": "user10",
+      "IpAddress": "10.10.30.20",
+      "WorkstationName": "WS-BIZ-10",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:11:00Z",
+      "TargetUserName": "user11",
+      "IpAddress": "10.10.30.21",
+      "WorkstationName": "WS-BIZ-11",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:12:00Z",
+      "TargetUserName": "user12",
+      "IpAddress": "10.10.30.22",
+      "WorkstationName": "WS-BIZ-12",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:13:00Z",
+      "TargetUserName": "user13",
+      "IpAddress": "10.10.30.23",
+      "WorkstationName": "WS-BIZ-13",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:14:00Z",
+      "TargetUserName": "user14",
+      "IpAddress": "10.10.30.24",
+      "WorkstationName": "WS-BIZ-14",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:15:00Z",
+      "TargetUserName": "user15",
+      "IpAddress": "10.10.30.25",
+      "WorkstationName": "WS-BIZ-15",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:16:00Z",
+      "TargetUserName": "user16",
+      "IpAddress": "10.10.30.26",
+      "WorkstationName": "WS-BIZ-16",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:17:00Z",
+      "TargetUserName": "user17",
+      "IpAddress": "10.10.30.27",
+      "WorkstationName": "WS-BIZ-17",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:18:00Z",
+      "TargetUserName": "user18",
+      "IpAddress": "10.10.30.28",
+      "WorkstationName": "WS-BIZ-18",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:19:00Z",
+      "TargetUserName": "user19",
+      "IpAddress": "10.10.30.29",
+      "WorkstationName": "WS-BIZ-19",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:20:00Z",
+      "TargetUserName": "user20",
+      "IpAddress": "10.10.30.30",
+      "WorkstationName": "WS-BIZ-20",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:21:00Z",
+      "TargetUserName": "user21",
+      "IpAddress": "10.10.30.31",
+      "WorkstationName": "WS-BIZ-21",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:22:00Z",
+      "TargetUserName": "user22",
+      "IpAddress": "10.10.30.32",
+      "WorkstationName": "WS-BIZ-22",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:23:00Z",
+      "TargetUserName": "user23",
+      "IpAddress": "10.10.30.33",
+      "WorkstationName": "WS-BIZ-23",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:24:00Z",
+      "TargetUserName": "user24",
+      "IpAddress": "10.10.30.34",
+      "WorkstationName": "WS-BIZ-24",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:25:00Z",
+      "TargetUserName": "user25",
+      "IpAddress": "10.10.30.35",
+      "WorkstationName": "WS-BIZ-25",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:26:00Z",
+      "TargetUserName": "user26",
+      "IpAddress": "10.10.30.36",
+      "WorkstationName": "WS-BIZ-26",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:27:00Z",
+      "TargetUserName": "user27",
+      "IpAddress": "10.10.30.37",
+      "WorkstationName": "WS-BIZ-27",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:28:00Z",
+      "TargetUserName": "user28",
+      "IpAddress": "10.10.30.38",
+      "WorkstationName": "WS-BIZ-28",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-12T01:29:00Z",
+      "TargetUserName": "user29",
+      "IpAddress": "10.10.30.39",
+      "WorkstationName": "WS-BIZ-29",
+      "Computer": "FS01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4688,
+      "TimeCreated": "2026-03-12T01:40:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "sc stop WinDefend"
+    },
+    {
+      "EventID": 4688,
+      "TimeCreated": "2026-03-12T01:41:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "net stop sense"
+    },
+    {
+      "EventID": 4688,
+      "TimeCreated": "2026-03-12T01:42:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "sc stop csagent"
+    },
+    {
+      "EventID": 4688,
+      "TimeCreated": "2026-03-12T01:45:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "vssadmin delete shadows /all /quiet"
+    },
+    {
+      "EventID": 4688,
+      "TimeCreated": "2026-03-12T01:46:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "Image": "C:\\Windows\\System32\\cmd.exe",
+      "CommandLine": "wmic shadowcopy delete"
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_000.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:02Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_001.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:04Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_002.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:06Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_003.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:08Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_004.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:10Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_005.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:12Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_006.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:14Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_007.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:16Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_008.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:18Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_009.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:20Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_010.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:22Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_011.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:24Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_012.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:26Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_013.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:28Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_014.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:30Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_015.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:32Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_016.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:34Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_017.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:36Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_018.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:38Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_019.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:40Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_020.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:42Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_021.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:44Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_022.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:46Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_023.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:48Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_024.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:50Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_025.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:52Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_026.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:54Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_027.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:56Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_028.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:50:58Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_029.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_030.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:02Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_031.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:04Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_032.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:06Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_033.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:08Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_034.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:10Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_035.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:12Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_036.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:14Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_037.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:16Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_038.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:18Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_039.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:20Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_040.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:22Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_041.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:24Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_042.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:26Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_043.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:28Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_044.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:30Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_045.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:32Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_046.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:34Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_047.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:36Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_048.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:38Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_049.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:40Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_050.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:42Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_051.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:44Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_052.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:46Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_053.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:48Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_054.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:50Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_055.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:52Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_056.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:54Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_057.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:56Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_058.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:51:58Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_059.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_060.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:02Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_061.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:04Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_062.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:06Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_063.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:08Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_064.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:10Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_065.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:12Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_066.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:14Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_067.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:16Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_068.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:18Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_069.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:20Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_070.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:22Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_071.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:24Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_072.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:26Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_073.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:28Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_074.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:30Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_075.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:32Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_076.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:34Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_077.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:36Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_078.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:38Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_079.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:40Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_080.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:42Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_081.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:44Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_082.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:46Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_083.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:48Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_084.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:50Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_085.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:52Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_086.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:54Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_087.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:56Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_088.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:52:58Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_089.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:00Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_090.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:02Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_091.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:04Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_092.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:06Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_093.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:08Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_094.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:10Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_095.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:12Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_096.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:14Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_097.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:16Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_098.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:18Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_099.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:20Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_100.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:22Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_101.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:24Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_102.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:26Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_103.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:28Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_104.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:30Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_105.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:32Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_106.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:34Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_107.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:36Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_108.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:38Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_109.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:40Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_110.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:42Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_111.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:44Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_112.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:46Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_113.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:48Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_114.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:50Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_115.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:52Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_116.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:54Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_117.encrypted"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:56Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_118.lockbit"
+      }
+    },
+    {
+      "EventID": 4663,
+      "TimeCreated": "2026-03-12T01:53:58Z",
+      "TargetUserName": "backupadmin",
+      "IpAddress": "10.10.10.120",
+      "WorkstationName": "WS-ATTACK01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ObjectName": "C:\\Shares\\Finance\\doc_119.encrypted"
+      }
+    },
+    {
+      "EventID": 7045,
+      "TimeCreated": "2026-03-12T01:55:00Z",
+      "SubjectUserName": "SYSTEM",
+      "WorkstationName": "FS01",
+      "Computer": "FS01.corp.local",
+      "EventData": {
+        "ServiceName": "mssecsvc2.0",
+        "ImagePath": "C:\\Windows\\Temp\\mssecsvc.exe"
+      }
+    },
+    {
+      "EventID": 4697,
+      "TimeCreated": "2026-03-12T01:57:00Z",
+      "SubjectUserName": "backupadmin",
+      "WorkstationName": "FS01",
+      "Computer": "FS01.corp.local",
+      "NewProcessName": "C:\\Users\\Public\\runme.exe"
+    },
+    {
+      "EventID": 1102,
+      "TimeCreated": "2026-03-12T01:58:00Z",
+      "SubjectUserName": "backupadmin",
+      "WorkstationName": "FS01",
+      "Computer": "FS01.corp.local"
+    }
+  ]
+}

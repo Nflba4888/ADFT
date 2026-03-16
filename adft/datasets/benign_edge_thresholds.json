@@ -1,0 +1,2683 @@
+{
+  "CaseMetadata": {
+    "name": "benign_edge_thresholds",
+    "purpose": "false_positive_resistance",
+    "expected_rules": []
+  },
+  "Events": [
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:00:00Z",
+      "TargetUserName": "user000",
+      "IpAddress": "10.20.0.10",
+      "WorkstationName": "WS-000",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:01:00Z",
+      "TargetUserName": "user001",
+      "IpAddress": "10.20.0.11",
+      "WorkstationName": "WS-001",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:02:00Z",
+      "TargetUserName": "user002",
+      "IpAddress": "10.20.0.12",
+      "WorkstationName": "WS-002",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:03:00Z",
+      "TargetUserName": "user003",
+      "IpAddress": "10.20.0.13",
+      "WorkstationName": "WS-003",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:04:00Z",
+      "TargetUserName": "user004",
+      "IpAddress": "10.20.0.14",
+      "WorkstationName": "WS-004",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:05:00Z",
+      "TargetUserName": "user005",
+      "IpAddress": "10.20.0.15",
+      "WorkstationName": "WS-005",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:06:00Z",
+      "TargetUserName": "user006",
+      "IpAddress": "10.20.0.16",
+      "WorkstationName": "WS-006",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:07:00Z",
+      "TargetUserName": "user007",
+      "IpAddress": "10.20.0.17",
+      "WorkstationName": "WS-007",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:08:00Z",
+      "TargetUserName": "user008",
+      "IpAddress": "10.20.0.18",
+      "WorkstationName": "WS-008",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:09:00Z",
+      "TargetUserName": "user009",
+      "IpAddress": "10.20.0.19",
+      "WorkstationName": "WS-009",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:10:00Z",
+      "TargetUserName": "user010",
+      "IpAddress": "10.20.0.20",
+      "WorkstationName": "WS-010",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:11:00Z",
+      "TargetUserName": "user011",
+      "IpAddress": "10.20.0.21",
+      "WorkstationName": "WS-011",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:12:00Z",
+      "TargetUserName": "user012",
+      "IpAddress": "10.20.0.22",
+      "WorkstationName": "WS-012",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:13:00Z",
+      "TargetUserName": "user013",
+      "IpAddress": "10.20.0.23",
+      "WorkstationName": "WS-013",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:14:00Z",
+      "TargetUserName": "user014",
+      "IpAddress": "10.20.0.24",
+      "WorkstationName": "WS-014",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:15:00Z",
+      "TargetUserName": "user015",
+      "IpAddress": "10.20.0.25",
+      "WorkstationName": "WS-015",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:16:00Z",
+      "TargetUserName": "user016",
+      "IpAddress": "10.20.0.26",
+      "WorkstationName": "WS-016",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:17:00Z",
+      "TargetUserName": "user017",
+      "IpAddress": "10.20.0.27",
+      "WorkstationName": "WS-017",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:18:00Z",
+      "TargetUserName": "user018",
+      "IpAddress": "10.20.0.28",
+      "WorkstationName": "WS-018",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:19:00Z",
+      "TargetUserName": "user019",
+      "IpAddress": "10.20.0.29",
+      "WorkstationName": "WS-019",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:20:00Z",
+      "TargetUserName": "user020",
+      "IpAddress": "10.20.0.30",
+      "WorkstationName": "WS-020",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:21:00Z",
+      "TargetUserName": "user021",
+      "IpAddress": "10.20.0.31",
+      "WorkstationName": "WS-021",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:22:00Z",
+      "TargetUserName": "user022",
+      "IpAddress": "10.20.0.32",
+      "WorkstationName": "WS-022",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:23:00Z",
+      "TargetUserName": "user023",
+      "IpAddress": "10.20.0.33",
+      "WorkstationName": "WS-023",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:24:00Z",
+      "TargetUserName": "user024",
+      "IpAddress": "10.20.0.34",
+      "WorkstationName": "WS-024",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:25:00Z",
+      "TargetUserName": "user025",
+      "IpAddress": "10.20.0.35",
+      "WorkstationName": "WS-025",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:26:00Z",
+      "TargetUserName": "user026",
+      "IpAddress": "10.20.0.36",
+      "WorkstationName": "WS-026",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:27:00Z",
+      "TargetUserName": "user027",
+      "IpAddress": "10.20.0.37",
+      "WorkstationName": "WS-027",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:28:00Z",
+      "TargetUserName": "user028",
+      "IpAddress": "10.20.0.38",
+      "WorkstationName": "WS-028",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:29:00Z",
+      "TargetUserName": "user029",
+      "IpAddress": "10.20.0.39",
+      "WorkstationName": "WS-029",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:30:00Z",
+      "TargetUserName": "user030",
+      "IpAddress": "10.20.0.40",
+      "WorkstationName": "WS-030",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:31:00Z",
+      "TargetUserName": "user031",
+      "IpAddress": "10.20.0.41",
+      "WorkstationName": "WS-031",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:32:00Z",
+      "TargetUserName": "user032",
+      "IpAddress": "10.20.0.42",
+      "WorkstationName": "WS-032",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:33:00Z",
+      "TargetUserName": "user033",
+      "IpAddress": "10.20.0.43",
+      "WorkstationName": "WS-033",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:34:00Z",
+      "TargetUserName": "user034",
+      "IpAddress": "10.20.0.44",
+      "WorkstationName": "WS-034",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:35:00Z",
+      "TargetUserName": "user035",
+      "IpAddress": "10.20.0.45",
+      "WorkstationName": "WS-035",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:36:00Z",
+      "TargetUserName": "user036",
+      "IpAddress": "10.20.0.46",
+      "WorkstationName": "WS-036",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:37:00Z",
+      "TargetUserName": "user037",
+      "IpAddress": "10.20.0.47",
+      "WorkstationName": "WS-037",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:38:00Z",
+      "TargetUserName": "user038",
+      "IpAddress": "10.20.0.48",
+      "WorkstationName": "WS-038",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:39:00Z",
+      "TargetUserName": "user039",
+      "IpAddress": "10.20.0.49",
+      "WorkstationName": "WS-039",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:40:00Z",
+      "TargetUserName": "user040",
+      "IpAddress": "10.20.0.50",
+      "WorkstationName": "WS-040",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:41:00Z",
+      "TargetUserName": "user041",
+      "IpAddress": "10.20.0.51",
+      "WorkstationName": "WS-041",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:42:00Z",
+      "TargetUserName": "user042",
+      "IpAddress": "10.20.0.52",
+      "WorkstationName": "WS-042",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:43:00Z",
+      "TargetUserName": "user043",
+      "IpAddress": "10.20.0.53",
+      "WorkstationName": "WS-043",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:44:00Z",
+      "TargetUserName": "user044",
+      "IpAddress": "10.20.0.54",
+      "WorkstationName": "WS-044",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:45:00Z",
+      "TargetUserName": "user045",
+      "IpAddress": "10.20.0.55",
+      "WorkstationName": "WS-045",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:46:00Z",
+      "TargetUserName": "user046",
+      "IpAddress": "10.20.0.56",
+      "WorkstationName": "WS-046",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:47:00Z",
+      "TargetUserName": "user047",
+      "IpAddress": "10.20.0.57",
+      "WorkstationName": "WS-047",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:48:00Z",
+      "TargetUserName": "user048",
+      "IpAddress": "10.20.0.58",
+      "WorkstationName": "WS-048",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:49:00Z",
+      "TargetUserName": "user049",
+      "IpAddress": "10.20.0.59",
+      "WorkstationName": "WS-049",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:50:00Z",
+      "TargetUserName": "user050",
+      "IpAddress": "10.20.1.10",
+      "WorkstationName": "WS-050",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:51:00Z",
+      "TargetUserName": "user051",
+      "IpAddress": "10.20.1.11",
+      "WorkstationName": "WS-051",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:52:00Z",
+      "TargetUserName": "user052",
+      "IpAddress": "10.20.1.12",
+      "WorkstationName": "WS-052",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:53:00Z",
+      "TargetUserName": "user053",
+      "IpAddress": "10.20.1.13",
+      "WorkstationName": "WS-053",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:54:00Z",
+      "TargetUserName": "user054",
+      "IpAddress": "10.20.1.14",
+      "WorkstationName": "WS-054",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:55:00Z",
+      "TargetUserName": "user055",
+      "IpAddress": "10.20.1.15",
+      "WorkstationName": "WS-055",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:56:00Z",
+      "TargetUserName": "user056",
+      "IpAddress": "10.20.1.16",
+      "WorkstationName": "WS-056",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:57:00Z",
+      "TargetUserName": "user057",
+      "IpAddress": "10.20.1.17",
+      "WorkstationName": "WS-057",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:58:00Z",
+      "TargetUserName": "user058",
+      "IpAddress": "10.20.1.18",
+      "WorkstationName": "WS-058",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T08:59:00Z",
+      "TargetUserName": "user059",
+      "IpAddress": "10.20.1.19",
+      "WorkstationName": "WS-059",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:00:00Z",
+      "TargetUserName": "user060",
+      "IpAddress": "10.20.1.20",
+      "WorkstationName": "WS-060",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:01:00Z",
+      "TargetUserName": "user061",
+      "IpAddress": "10.20.1.21",
+      "WorkstationName": "WS-061",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:02:00Z",
+      "TargetUserName": "user062",
+      "IpAddress": "10.20.1.22",
+      "WorkstationName": "WS-062",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:03:00Z",
+      "TargetUserName": "user063",
+      "IpAddress": "10.20.1.23",
+      "WorkstationName": "WS-063",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:04:00Z",
+      "TargetUserName": "user064",
+      "IpAddress": "10.20.1.24",
+      "WorkstationName": "WS-064",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:05:00Z",
+      "TargetUserName": "user065",
+      "IpAddress": "10.20.1.25",
+      "WorkstationName": "WS-065",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:06:00Z",
+      "TargetUserName": "user066",
+      "IpAddress": "10.20.1.26",
+      "WorkstationName": "WS-066",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:07:00Z",
+      "TargetUserName": "user067",
+      "IpAddress": "10.20.1.27",
+      "WorkstationName": "WS-067",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:08:00Z",
+      "TargetUserName": "user068",
+      "IpAddress": "10.20.1.28",
+      "WorkstationName": "WS-068",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:09:00Z",
+      "TargetUserName": "user069",
+      "IpAddress": "10.20.1.29",
+      "WorkstationName": "WS-069",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:10:00Z",
+      "TargetUserName": "user070",
+      "IpAddress": "10.20.1.30",
+      "WorkstationName": "WS-070",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:11:00Z",
+      "TargetUserName": "user071",
+      "IpAddress": "10.20.1.31",
+      "WorkstationName": "WS-071",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:12:00Z",
+      "TargetUserName": "user072",
+      "IpAddress": "10.20.1.32",
+      "WorkstationName": "WS-072",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:13:00Z",
+      "TargetUserName": "user073",
+      "IpAddress": "10.20.1.33",
+      "WorkstationName": "WS-073",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:14:00Z",
+      "TargetUserName": "user074",
+      "IpAddress": "10.20.1.34",
+      "WorkstationName": "WS-074",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:15:00Z",
+      "TargetUserName": "user075",
+      "IpAddress": "10.20.1.35",
+      "WorkstationName": "WS-075",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:16:00Z",
+      "TargetUserName": "user076",
+      "IpAddress": "10.20.1.36",
+      "WorkstationName": "WS-076",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:17:00Z",
+      "TargetUserName": "user077",
+      "IpAddress": "10.20.1.37",
+      "WorkstationName": "WS-077",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:18:00Z",
+      "TargetUserName": "user078",
+      "IpAddress": "10.20.1.38",
+      "WorkstationName": "WS-078",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:19:00Z",
+      "TargetUserName": "user079",
+      "IpAddress": "10.20.1.39",
+      "WorkstationName": "WS-079",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:20:00Z",
+      "TargetUserName": "user080",
+      "IpAddress": "10.20.1.40",
+      "WorkstationName": "WS-080",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:21:00Z",
+      "TargetUserName": "user081",
+      "IpAddress": "10.20.1.41",
+      "WorkstationName": "WS-081",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:22:00Z",
+      "TargetUserName": "user082",
+      "IpAddress": "10.20.1.42",
+      "WorkstationName": "WS-082",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:23:00Z",
+      "TargetUserName": "user083",
+      "IpAddress": "10.20.1.43",
+      "WorkstationName": "WS-083",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:24:00Z",
+      "TargetUserName": "user084",
+      "IpAddress": "10.20.1.44",
+      "WorkstationName": "WS-084",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:25:00Z",
+      "TargetUserName": "user085",
+      "IpAddress": "10.20.1.45",
+      "WorkstationName": "WS-085",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:26:00Z",
+      "TargetUserName": "user086",
+      "IpAddress": "10.20.1.46",
+      "WorkstationName": "WS-086",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:27:00Z",
+      "TargetUserName": "user087",
+      "IpAddress": "10.20.1.47",
+      "WorkstationName": "WS-087",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:28:00Z",
+      "TargetUserName": "user088",
+      "IpAddress": "10.20.1.48",
+      "WorkstationName": "WS-088",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:29:00Z",
+      "TargetUserName": "user089",
+      "IpAddress": "10.20.1.49",
+      "WorkstationName": "WS-089",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:30:00Z",
+      "TargetUserName": "user090",
+      "IpAddress": "10.20.1.50",
+      "WorkstationName": "WS-090",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:31:00Z",
+      "TargetUserName": "user091",
+      "IpAddress": "10.20.1.51",
+      "WorkstationName": "WS-091",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:32:00Z",
+      "TargetUserName": "user092",
+      "IpAddress": "10.20.1.52",
+      "WorkstationName": "WS-092",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:33:00Z",
+      "TargetUserName": "user093",
+      "IpAddress": "10.20.1.53",
+      "WorkstationName": "WS-093",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:34:00Z",
+      "TargetUserName": "user094",
+      "IpAddress": "10.20.1.54",
+      "WorkstationName": "WS-094",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:35:00Z",
+      "TargetUserName": "user095",
+      "IpAddress": "10.20.1.55",
+      "WorkstationName": "WS-095",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:36:00Z",
+      "TargetUserName": "user096",
+      "IpAddress": "10.20.1.56",
+      "WorkstationName": "WS-096",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:37:00Z",
+      "TargetUserName": "user097",
+      "IpAddress": "10.20.1.57",
+      "WorkstationName": "WS-097",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:38:00Z",
+      "TargetUserName": "user098",
+      "IpAddress": "10.20.1.58",
+      "WorkstationName": "WS-098",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:39:00Z",
+      "TargetUserName": "user099",
+      "IpAddress": "10.20.1.59",
+      "WorkstationName": "WS-099",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:40:00Z",
+      "TargetUserName": "user100",
+      "IpAddress": "10.20.2.10",
+      "WorkstationName": "WS-100",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:41:00Z",
+      "TargetUserName": "user101",
+      "IpAddress": "10.20.2.11",
+      "WorkstationName": "WS-101",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:42:00Z",
+      "TargetUserName": "user102",
+      "IpAddress": "10.20.2.12",
+      "WorkstationName": "WS-102",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:43:00Z",
+      "TargetUserName": "user103",
+      "IpAddress": "10.20.2.13",
+      "WorkstationName": "WS-103",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:44:00Z",
+      "TargetUserName": "user104",
+      "IpAddress": "10.20.2.14",
+      "WorkstationName": "WS-104",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:45:00Z",
+      "TargetUserName": "user105",
+      "IpAddress": "10.20.2.15",
+      "WorkstationName": "WS-105",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:46:00Z",
+      "TargetUserName": "user106",
+      "IpAddress": "10.20.2.16",
+      "WorkstationName": "WS-106",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:47:00Z",
+      "TargetUserName": "user107",
+      "IpAddress": "10.20.2.17",
+      "WorkstationName": "WS-107",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:48:00Z",
+      "TargetUserName": "user108",
+      "IpAddress": "10.20.2.18",
+      "WorkstationName": "WS-108",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:49:00Z",
+      "TargetUserName": "user109",
+      "IpAddress": "10.20.2.19",
+      "WorkstationName": "WS-109",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:50:00Z",
+      "TargetUserName": "user110",
+      "IpAddress": "10.20.2.20",
+      "WorkstationName": "WS-110",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:51:00Z",
+      "TargetUserName": "user111",
+      "IpAddress": "10.20.2.21",
+      "WorkstationName": "WS-111",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:52:00Z",
+      "TargetUserName": "user112",
+      "IpAddress": "10.20.2.22",
+      "WorkstationName": "WS-112",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:53:00Z",
+      "TargetUserName": "user113",
+      "IpAddress": "10.20.2.23",
+      "WorkstationName": "WS-113",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:54:00Z",
+      "TargetUserName": "user114",
+      "IpAddress": "10.20.2.24",
+      "WorkstationName": "WS-114",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:55:00Z",
+      "TargetUserName": "user115",
+      "IpAddress": "10.20.2.25",
+      "WorkstationName": "WS-115",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:56:00Z",
+      "TargetUserName": "user116",
+      "IpAddress": "10.20.2.26",
+      "WorkstationName": "WS-116",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:57:00Z",
+      "TargetUserName": "user117",
+      "IpAddress": "10.20.2.27",
+      "WorkstationName": "WS-117",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:58:00Z",
+      "TargetUserName": "user118",
+      "IpAddress": "10.20.2.28",
+      "WorkstationName": "WS-118",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T09:59:00Z",
+      "TargetUserName": "user119",
+      "IpAddress": "10.20.2.29",
+      "WorkstationName": "WS-119",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:00:00Z",
+      "TargetUserName": "user120",
+      "IpAddress": "10.20.2.30",
+      "WorkstationName": "WS-120",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:01:00Z",
+      "TargetUserName": "user121",
+      "IpAddress": "10.20.2.31",
+      "WorkstationName": "WS-121",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:02:00Z",
+      "TargetUserName": "user122",
+      "IpAddress": "10.20.2.32",
+      "WorkstationName": "WS-122",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:03:00Z",
+      "TargetUserName": "user123",
+      "IpAddress": "10.20.2.33",
+      "WorkstationName": "WS-123",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:04:00Z",
+      "TargetUserName": "user124",
+      "IpAddress": "10.20.2.34",
+      "WorkstationName": "WS-124",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:05:00Z",
+      "TargetUserName": "user125",
+      "IpAddress": "10.20.2.35",
+      "WorkstationName": "WS-125",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:06:00Z",
+      "TargetUserName": "user126",
+      "IpAddress": "10.20.2.36",
+      "WorkstationName": "WS-126",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:07:00Z",
+      "TargetUserName": "user127",
+      "IpAddress": "10.20.2.37",
+      "WorkstationName": "WS-127",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:08:00Z",
+      "TargetUserName": "user128",
+      "IpAddress": "10.20.2.38",
+      "WorkstationName": "WS-128",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:09:00Z",
+      "TargetUserName": "user129",
+      "IpAddress": "10.20.2.39",
+      "WorkstationName": "WS-129",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:10:00Z",
+      "TargetUserName": "user130",
+      "IpAddress": "10.20.2.40",
+      "WorkstationName": "WS-130",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:11:00Z",
+      "TargetUserName": "user131",
+      "IpAddress": "10.20.2.41",
+      "WorkstationName": "WS-131",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:12:00Z",
+      "TargetUserName": "user132",
+      "IpAddress": "10.20.2.42",
+      "WorkstationName": "WS-132",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:13:00Z",
+      "TargetUserName": "user133",
+      "IpAddress": "10.20.2.43",
+      "WorkstationName": "WS-133",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:14:00Z",
+      "TargetUserName": "user134",
+      "IpAddress": "10.20.2.44",
+      "WorkstationName": "WS-134",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:15:00Z",
+      "TargetUserName": "user135",
+      "IpAddress": "10.20.2.45",
+      "WorkstationName": "WS-135",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:16:00Z",
+      "TargetUserName": "user136",
+      "IpAddress": "10.20.2.46",
+      "WorkstationName": "WS-136",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:17:00Z",
+      "TargetUserName": "user137",
+      "IpAddress": "10.20.2.47",
+      "WorkstationName": "WS-137",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:18:00Z",
+      "TargetUserName": "user138",
+      "IpAddress": "10.20.2.48",
+      "WorkstationName": "WS-138",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:19:00Z",
+      "TargetUserName": "user139",
+      "IpAddress": "10.20.2.49",
+      "WorkstationName": "WS-139",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:20:00Z",
+      "TargetUserName": "user140",
+      "IpAddress": "10.20.2.50",
+      "WorkstationName": "WS-140",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:21:00Z",
+      "TargetUserName": "user141",
+      "IpAddress": "10.20.2.51",
+      "WorkstationName": "WS-141",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:22:00Z",
+      "TargetUserName": "user142",
+      "IpAddress": "10.20.2.52",
+      "WorkstationName": "WS-142",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:23:00Z",
+      "TargetUserName": "user143",
+      "IpAddress": "10.20.2.53",
+      "WorkstationName": "WS-143",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:24:00Z",
+      "TargetUserName": "user144",
+      "IpAddress": "10.20.2.54",
+      "WorkstationName": "WS-144",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:25:00Z",
+      "TargetUserName": "user145",
+      "IpAddress": "10.20.2.55",
+      "WorkstationName": "WS-145",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:26:00Z",
+      "TargetUserName": "user146",
+      "IpAddress": "10.20.2.56",
+      "WorkstationName": "WS-146",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:27:00Z",
+      "TargetUserName": "user147",
+      "IpAddress": "10.20.2.57",
+      "WorkstationName": "WS-147",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:28:00Z",
+      "TargetUserName": "user148",
+      "IpAddress": "10.20.2.58",
+      "WorkstationName": "WS-148",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:29:00Z",
+      "TargetUserName": "user149",
+      "IpAddress": "10.20.2.59",
+      "WorkstationName": "WS-149",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:30:00Z",
+      "TargetUserName": "user150",
+      "IpAddress": "10.20.3.10",
+      "WorkstationName": "WS-150",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:31:00Z",
+      "TargetUserName": "user151",
+      "IpAddress": "10.20.3.11",
+      "WorkstationName": "WS-151",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:32:00Z",
+      "TargetUserName": "user152",
+      "IpAddress": "10.20.3.12",
+      "WorkstationName": "WS-152",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:33:00Z",
+      "TargetUserName": "user153",
+      "IpAddress": "10.20.3.13",
+      "WorkstationName": "WS-153",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:34:00Z",
+      "TargetUserName": "user154",
+      "IpAddress": "10.20.3.14",
+      "WorkstationName": "WS-154",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:35:00Z",
+      "TargetUserName": "user155",
+      "IpAddress": "10.20.3.15",
+      "WorkstationName": "WS-155",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:36:00Z",
+      "TargetUserName": "user156",
+      "IpAddress": "10.20.3.16",
+      "WorkstationName": "WS-156",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:37:00Z",
+      "TargetUserName": "user157",
+      "IpAddress": "10.20.3.17",
+      "WorkstationName": "WS-157",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:38:00Z",
+      "TargetUserName": "user158",
+      "IpAddress": "10.20.3.18",
+      "WorkstationName": "WS-158",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:39:00Z",
+      "TargetUserName": "user159",
+      "IpAddress": "10.20.3.19",
+      "WorkstationName": "WS-159",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:40:00Z",
+      "TargetUserName": "user160",
+      "IpAddress": "10.20.3.20",
+      "WorkstationName": "WS-160",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:41:00Z",
+      "TargetUserName": "user161",
+      "IpAddress": "10.20.3.21",
+      "WorkstationName": "WS-161",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:42:00Z",
+      "TargetUserName": "user162",
+      "IpAddress": "10.20.3.22",
+      "WorkstationName": "WS-162",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:43:00Z",
+      "TargetUserName": "user163",
+      "IpAddress": "10.20.3.23",
+      "WorkstationName": "WS-163",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:44:00Z",
+      "TargetUserName": "user164",
+      "IpAddress": "10.20.3.24",
+      "WorkstationName": "WS-164",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:45:00Z",
+      "TargetUserName": "user165",
+      "IpAddress": "10.20.3.25",
+      "WorkstationName": "WS-165",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:46:00Z",
+      "TargetUserName": "user166",
+      "IpAddress": "10.20.3.26",
+      "WorkstationName": "WS-166",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:47:00Z",
+      "TargetUserName": "user167",
+      "IpAddress": "10.20.3.27",
+      "WorkstationName": "WS-167",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:48:00Z",
+      "TargetUserName": "user168",
+      "IpAddress": "10.20.3.28",
+      "WorkstationName": "WS-168",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:49:00Z",
+      "TargetUserName": "user169",
+      "IpAddress": "10.20.3.29",
+      "WorkstationName": "WS-169",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:50:00Z",
+      "TargetUserName": "user170",
+      "IpAddress": "10.20.3.30",
+      "WorkstationName": "WS-170",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:51:00Z",
+      "TargetUserName": "user171",
+      "IpAddress": "10.20.3.31",
+      "WorkstationName": "WS-171",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:52:00Z",
+      "TargetUserName": "user172",
+      "IpAddress": "10.20.3.32",
+      "WorkstationName": "WS-172",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:53:00Z",
+      "TargetUserName": "user173",
+      "IpAddress": "10.20.3.33",
+      "WorkstationName": "WS-173",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:54:00Z",
+      "TargetUserName": "user174",
+      "IpAddress": "10.20.3.34",
+      "WorkstationName": "WS-174",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:55:00Z",
+      "TargetUserName": "user175",
+      "IpAddress": "10.20.3.35",
+      "WorkstationName": "WS-175",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:56:00Z",
+      "TargetUserName": "user176",
+      "IpAddress": "10.20.3.36",
+      "WorkstationName": "WS-176",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:57:00Z",
+      "TargetUserName": "user177",
+      "IpAddress": "10.20.3.37",
+      "WorkstationName": "WS-177",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:58:00Z",
+      "TargetUserName": "user178",
+      "IpAddress": "10.20.3.38",
+      "WorkstationName": "WS-178",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T10:59:00Z",
+      "TargetUserName": "user179",
+      "IpAddress": "10.20.3.39",
+      "WorkstationName": "WS-179",
+      "Computer": "APP01.corp.local",
+      "LogonType": 2
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:20:00Z",
+      "TargetUserName": "edge_user_0_0",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:20:20Z",
+      "TargetUserName": "edge_user_0_0",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:20:40Z",
+      "TargetUserName": "edge_user_0_0",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:21:00Z",
+      "TargetUserName": "edge_user_0_0",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:21:00Z",
+      "TargetUserName": "edge_user_0_1",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:21:20Z",
+      "TargetUserName": "edge_user_0_1",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:21:40Z",
+      "TargetUserName": "edge_user_0_1",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:22:00Z",
+      "TargetUserName": "edge_user_0_1",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:22:00Z",
+      "TargetUserName": "edge_user_0_2",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:22:20Z",
+      "TargetUserName": "edge_user_0_2",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:22:40Z",
+      "TargetUserName": "edge_user_0_2",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:23:00Z",
+      "TargetUserName": "edge_user_0_2",
+      "IpAddress": "10.30.0.10",
+      "WorkstationName": "WS-EDGE-0",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:30:00Z",
+      "TargetUserName": "edge_user_1_0",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:30:20Z",
+      "TargetUserName": "edge_user_1_0",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:30:40Z",
+      "TargetUserName": "edge_user_1_0",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:31:00Z",
+      "TargetUserName": "edge_user_1_0",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:31:00Z",
+      "TargetUserName": "edge_user_1_1",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:31:20Z",
+      "TargetUserName": "edge_user_1_1",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:31:40Z",
+      "TargetUserName": "edge_user_1_1",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:32:00Z",
+      "TargetUserName": "edge_user_1_1",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:32:00Z",
+      "TargetUserName": "edge_user_1_2",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:32:20Z",
+      "TargetUserName": "edge_user_1_2",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:32:40Z",
+      "TargetUserName": "edge_user_1_2",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:33:00Z",
+      "TargetUserName": "edge_user_1_2",
+      "IpAddress": "10.30.0.11",
+      "WorkstationName": "WS-EDGE-1",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:40:00Z",
+      "TargetUserName": "edge_user_2_0",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:40:20Z",
+      "TargetUserName": "edge_user_2_0",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:40:40Z",
+      "TargetUserName": "edge_user_2_0",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:41:00Z",
+      "TargetUserName": "edge_user_2_0",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:41:00Z",
+      "TargetUserName": "edge_user_2_1",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:41:20Z",
+      "TargetUserName": "edge_user_2_1",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:41:40Z",
+      "TargetUserName": "edge_user_2_1",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:42:00Z",
+      "TargetUserName": "edge_user_2_1",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:42:00Z",
+      "TargetUserName": "edge_user_2_2",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:42:20Z",
+      "TargetUserName": "edge_user_2_2",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:42:40Z",
+      "TargetUserName": "edge_user_2_2",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4625,
+      "TimeCreated": "2026-03-13T11:43:00Z",
+      "TargetUserName": "edge_user_2_2",
+      "IpAddress": "10.30.0.12",
+      "WorkstationName": "WS-EDGE-2",
+      "Computer": "DC01.corp.local",
+      "Status": "0xC000006A"
+    },
+    {
+      "EventID": 4771,
+      "TimeCreated": "2026-03-13T12:20:00Z",
+      "TargetUserName": "svc_legacy",
+      "IpAddress": "10.40.0.20",
+      "WorkstationName": "APP01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4771,
+      "TimeCreated": "2026-03-13T12:20:30Z",
+      "TargetUserName": "svc_legacy",
+      "IpAddress": "10.40.0.20",
+      "WorkstationName": "APP01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4771,
+      "TimeCreated": "2026-03-13T12:21:00Z",
+      "TargetUserName": "svc_legacy",
+      "IpAddress": "10.40.0.20",
+      "WorkstationName": "APP01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4771,
+      "TimeCreated": "2026-03-13T12:21:30Z",
+      "TargetUserName": "svc_legacy",
+      "IpAddress": "10.40.0.20",
+      "WorkstationName": "APP01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:00Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:01Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:02Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:03Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:04Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:05Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:06Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:07Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:08Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:09Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:10Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:11Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:12Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:13Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:14Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:15Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:16Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:17Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:18Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:19Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:20Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:21Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:22Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:23Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:24Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:25Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:26Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:27Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:28Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:29Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:30Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:31Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:32Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:33Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:34Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:35Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:36Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:37Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:38Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:39Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:40Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:41Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:42Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:43Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:44Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:45Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:46Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:47Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:48Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:49Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:50Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:51Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:52Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:53Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:54Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:55Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.10",
+      "WorkstationName": "APP-0",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:56Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.11",
+      "WorkstationName": "APP-1",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:57Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.12",
+      "WorkstationName": "APP-2",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:58Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.13",
+      "WorkstationName": "APP-3",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4769,
+      "TimeCreated": "2026-03-13T13:00:59Z",
+      "TargetUserName": "svc_sql",
+      "ServiceName": "MSSQLSvc/sql01.corp.local:1433",
+      "TicketEncryptionType": "0x12",
+      "IpAddress": "10.50.0.14",
+      "WorkstationName": "APP-4",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T14:00:00Z",
+      "TargetUserName": "hr-admin",
+      "IpAddress": "10.60.0.10",
+      "WorkstationName": "WS-HR-01",
+      "Computer": "HRAPP01.corp.local",
+      "LogonType": 3
+    },
+    {
+      "EventID": 4624,
+      "TimeCreated": "2026-03-13T14:01:00Z",
+      "TargetUserName": "hr-admin",
+      "IpAddress": "10.60.0.11",
+      "WorkstationName": "WS-HR-02",
+      "Computer": "HRAPP01.corp.local",
+      "LogonType": 3
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:40:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:41:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:42:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:43:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:44:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:45:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:46:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:47:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:48:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    },
+    {
+      "EventID": 4672,
+      "TimeCreated": "2026-03-13T14:49:00Z",
+      "TargetUserName": "SYSTEM",
+      "IpAddress": "-",
+      "WorkstationName": "DC01",
+      "Computer": "DC01.corp.local"
+    }
+  ]
+}
