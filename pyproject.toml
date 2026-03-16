@@ -8,7 +8,7 @@ version = "1.0.0"
 description = "ADFT v1.0 — offline AD investigation toolkit with integrated GUI and canonical JSONL ingestion"
 readme = "README.md"
 license = "MIT"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 authors = [{name = "Jean Koumou"}]
 keywords = ["active-directory", "forensics", "dfir", "incident-response", "soc", "windows-logs", "mitre-attack"]
 
