@@ -14,7 +14,7 @@ ADFT ingests exported evidence, converts every supported source into canonical J
 
 ADFT analyzes offline Windows / AD / SIEM-oriented datasets and produces investigation artifacts through a CLI and an integrated GUI.
 
-![ADFT CLI summary](docs/screenshots/01-cli-summary.png)
+![ADFT CLI summary](docs/screenshots/04-benchmark.png)
 
 ## Scope of v1.0
 
@@ -107,7 +107,7 @@ Then open:
 ```text
 http://127.0.0.1:8765
 ```
-![ADFT Benchmark](docs/screenshots/04-benchmark.png)
+![ADFT Benchmark](docs/screenshots/01-cli-summary.png)
 
 The GUI is backend-driven: uploads, conversion, investigation, alerts, timeline, reconstruction, graph, benchmark, hardening and export views read the real ADFT run state instead of replaying business logic in the browser.
 
@@ -124,7 +124,7 @@ The GUI is backend-driven: uploads, conversion, investigation, alerts, timeline,
 ## Graph-based pivoting
 
 ADFT supports graph-based investigation from a selected pivot, with visible relationships, time scoping, and analyst-oriented navigation.
-![ADFT Graph Pivot](docs/screenshots/03-graph-pivot.png)
+![ADFT Graph Pivot](docs/screenshots/04-benchmark.png)
 
 ## Generated artefacts
 
@@ -185,7 +185,7 @@ python3 main.py investigate adft/datasets/ransomware_pre_encryption_campaign.jso
 python3 main.py ui -o /tmp/adft_release_reports --host 127.0.0.1 --port 8765
 ```
 ## Benchmark and validation
-![ADFT Dashboard](docs/screenshots/02-dashboard.png)
+![ADFT Dashboard](docs/screenshots/03-graph-pivot.png)
 
 The benchmark view provides a compact product validation surface with run metrics and packaged release checks.
 
