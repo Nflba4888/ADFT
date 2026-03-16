@@ -107,7 +107,7 @@ Then open:
 ```text
 http://127.0.0.1:8765
 ```
-![ADFT Dashboard](docs/screenshots/02-dashboard.png)
+![ADFT Benchmark](docs/screenshots/04-benchmark.png)
 
 The GUI is backend-driven: uploads, conversion, investigation, alerts, timeline, reconstruction, graph, benchmark, hardening and export views read the real ADFT run state instead of replaying business logic in the browser.
 
@@ -185,9 +185,10 @@ python3 main.py investigate adft/datasets/ransomware_pre_encryption_campaign.jso
 python3 main.py ui -o /tmp/adft_release_reports --host 127.0.0.1 --port 8765
 ```
 ## Benchmark and validation
+![ADFT Dashboard](docs/screenshots/02-dashboard.png)
 
 The benchmark view provides a compact product validation surface with run metrics and packaged release checks.
-![ADFT Benchmark](docs/screenshots/04-benchmark.png)
+
 
 See also:
 
