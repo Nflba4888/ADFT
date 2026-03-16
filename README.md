@@ -14,7 +14,7 @@ ADFT ingests exported evidence, converts every supported source into canonical J
 
 ADFT analyzes offline Windows / AD / SIEM-oriented datasets and produces investigation artifacts through a CLI and an integrated GUI.
 
-![ADFT CLI summary](docs/screenshots/04-benchmark.png)
+![ADFT CLI summary](docs/screenshots/01-cli.png)
 
 ## Scope of v1.0
 
