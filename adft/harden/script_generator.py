@@ -33,21 +33,68 @@ $ErrorActionPreference = 'Stop'
 
     SCRIPT_TEMPLATES: Dict[str, str] = {
         "HARD-001": """
-Write-Host "[ADFT] Inventaire des comptes de service avec SPN" -ForegroundColor Cyan
-$svcAccounts = Get-ADUser -LDAPFilter "(servicePrincipalName=*)" -Properties ServicePrincipalName,msDS-SupportedEncryptionTypes,PasswordLastSet,Enabled |
-  Where-Object { $_.Enabled -eq $true } |
-  Select-Object SamAccountName,ServicePrincipalName,msDS-SupportedEncryptionTypes,PasswordLastSet
-$svcAccounts | Format-Table -AutoSize
+param(
+    [string]$SearchBase = "",
+    [string]$CsvPath = ""
+)
 
-Write-Host "`n[ADFT] Comptes sans AES uniquement" -ForegroundColor Yellow
-$weakEnc = $svcAccounts | Where-Object { -not $_.msDS-SupportedEncryptionTypes -or (($_.msDS-SupportedEncryptionTypes -band 24) -eq 0) }
-$weakEnc | Format-Table -AutoSize
+Write-Host "[ADFT] Review of service accounts with SPN" -ForegroundColor Cyan
 
-# --- CANDIDAT DE CORRECTION (décommenter après validation) ---
+$properties = @(
+    "ServicePrincipalName",
+    "msDS-SupportedEncryptionTypes",
+    "PasswordLastSet",
+    "Enabled"
+)
+
+$queryParams = @{
+    LDAPFilter = "(servicePrincipalName=*)"
+    Properties = $properties
+}
+
+if ($SearchBase) {
+    $queryParams["SearchBase"] = $SearchBase
+    Write-Host "[ADFT] Scoped search base: $SearchBase" -ForegroundColor DarkCyan
+}
+
+$svcAccounts = Get-ADUser @queryParams |
+    Where-Object { $_.Enabled -eq $true } |
+    Select-Object `
+        SamAccountName,
+        @{Name="SPNCount";Expression={ @($_.ServicePrincipalName).Count }},
+        @{Name="EncryptionTypes";Expression={ $_."msDS-SupportedEncryptionTypes" }},
+        PasswordLastSet
+
+if (-not $svcAccounts) {
+    Write-Host "[ADFT] No enabled service accounts with SPN found." -ForegroundColor Yellow
+    return
+}
+
+Write-Host "`n[ADFT] Enabled service accounts with SPN" -ForegroundColor Cyan
+$svcAccounts | Sort-Object SamAccountName | Format-Table -AutoSize
+
+$weakEnc = $svcAccounts | Where-Object {
+    -not $_.EncryptionTypes -or
+    (($_.EncryptionTypes -band 24) -eq 0)
+}
+
+Write-Host "`n[ADFT] Accounts that may not be AES-only" -ForegroundColor Yellow
+if ($weakEnc) {
+    $weakEnc | Sort-Object SamAccountName | Format-Table -AutoSize
+} else {
+    Write-Host "[ADFT] No obvious weak Kerberos encryption configuration detected." -ForegroundColor Green
+}
+
+if ($CsvPath) {
+    $svcAccounts | Export-Csv -Path $CsvPath -NoTypeInformation -Encoding UTF8
+    Write-Host "[ADFT] Exported inventory to $CsvPath" -ForegroundColor Green
+}
+
+# Candidate remediation — validate before use
 # foreach ($acct in $weakEnc) {
-#   Set-ADUser -Identity $acct.SamAccountName -KerberosEncryptionType AES128,AES256
+#     Set-ADUser -Identity $acct.SamAccountName -KerberosEncryptionType AES128,AES256
 # }
-# Envisager la migration vers gMSA si le service le permet.
+# Consider migrating eligible service accounts to gMSA where possible.
 """,
         "HARD-002": """
 Write-Host "[ADFT] Recherche des comptes sans pré-authentification Kerberos" -ForegroundColor Cyan
@@ -69,16 +116,70 @@ Write-Host "[ADFT] Préparer une double rotation KRBTGT selon procédure de cris
 # Documenter la séquence, l'intervalle et la validation de réplication avant exécution manuelle.
 """,
         "HARD-010": """
-Write-Host "[ADFT] Export des groupes privilégiés" -ForegroundColor Cyan
-$groups = 'Domain Admins','Enterprise Admins','Schema Admins','Administrators','Account Operators','Backup Operators','Server Operators','Print Operators'
-foreach ($g in $groups) {
-  try {
-    Get-ADGroupMember -Identity $g -Recursive | Select-Object @{N='Group';E={$g}},Name,SamAccountName,ObjectClass
-  } catch {
-    Write-Warning "Impossible de lire le groupe $g : $_"
-  }
+param(
+    [string[]]$Groups = @(
+        "Domain Admins",
+        "Enterprise Admins",
+        "Schema Admins",
+        "Administrators",
+        "Account Operators",
+        "Backup Operators",
+        "Server Operators",
+        "Print Operators"
+    ),
+    [switch]$Recursive,
+    [string]$CsvPath = ""
+)
+
+Write-Host "[ADFT] Review of privileged groups" -ForegroundColor Cyan
+
+$results = foreach ($g in $Groups) {
+    try {
+        Write-Host "[ADFT] Reading group: $g" -ForegroundColor DarkCyan
+
+        if ($Recursive) {
+            Get-ADGroupMember -Identity $g -Recursive -ErrorAction Stop |
+                Select-Object `
+                    @{Name="Group";Expression={$g}},
+                    Name,
+                    SamAccountName,
+                    ObjectClass,
+                    DistinguishedName
+        }
+        else {
+            Get-ADGroupMember -Identity $g -ErrorAction Stop |
+                Select-Object `
+                    @{Name="Group";Expression={$g}},
+                    Name,
+                    SamAccountName,
+                    ObjectClass,
+                    DistinguishedName
+        }
+    }
+    catch {
+        Write-Warning "Unable to read group '$g' : $($_.Exception.Message)"
+    }
 }
-# Export conseillé : ... | Export-Csv .\\privileged_groups_snapshot.csv -NoTypeInformation
+
+if (-not $results) {
+    Write-Host "[ADFT] No privileged group membership data returned." -ForegroundColor Yellow
+    return
+}
+
+Write-Host "`n[ADFT] Privileged group membership snapshot" -ForegroundColor Cyan
+$results |
+    Sort-Object Group, ObjectClass, SamAccountName |
+    Format-Table Group, Name, SamAccountName, ObjectClass -AutoSize
+
+if ($CsvPath) {
+    $results | Export-Csv -Path $CsvPath -NoTypeInformation -Encoding UTF8
+    Write-Host "[ADFT] Exported snapshot to $CsvPath" -ForegroundColor Green
+}
+
+Write-Host "`n[ADFT] Notes:" -ForegroundColor Yellow
+Write-Host " - Use direct membership review by default." -ForegroundColor Yellow
+Write-Host " - Use -Recursive only when nested groups must be expanded." -ForegroundColor Yellow
+Write-Host " - Review unexpected users, service accounts, and cross-tier memberships." -ForegroundColor Yellow
 """,
         "HARD-011": """
 param([string[]]$Identity = @())
@@ -93,10 +194,60 @@ foreach ($id in $Identity) {
 # Réinitialisation éventuelle à mener séparément après qualification IR.
 """,
         "HARD-012": """
-Write-Host "[ADFT] Revue des comptes créés récemment" -ForegroundColor Cyan
-Get-ADUser -Filter * -Properties whenCreated,Enabled,MemberOf |
-  Where-Object { $_.whenCreated -gt (Get-Date).AddDays(-14) } |
-  Select-Object SamAccountName,whenCreated,Enabled,MemberOf | Sort-Object whenCreated -Descending | Format-Table -AutoSize
+param(
+    [int]$DaysBack = 14,
+    [string]$SearchBase = "",
+    [string]$CsvPath = ""
+)
+
+Write-Host "[ADFT] Review of recently created accounts" -ForegroundColor Cyan
+
+$since = (Get-Date).AddDays(-$DaysBack)
+$sinceUtc = $since.ToUniversalTime().ToString("yyyyMMddHHmmss.0Z")
+$ldapFilter = "(&(objectCategory=person)(objectClass=user)(whenCreated>=$sinceUtc))"
+
+$properties = @(
+    "whenCreated",
+    "Enabled",
+    "MemberOf"
+)
+
+$queryParams = @{
+    LDAPFilter = $ldapFilter
+    Properties = $properties
+}
+
+if ($SearchBase) {
+    $queryParams["SearchBase"] = $SearchBase
+    Write-Host "[ADFT] Scoped search base: $SearchBase" -ForegroundColor DarkCyan
+}
+
+$recentUsers = Get-ADUser @queryParams |
+    Select-Object `
+        SamAccountName,
+        whenCreated,
+        Enabled,
+        @{Name="GroupCount";Expression={ @($_.MemberOf).Count }}
+
+if (-not $recentUsers) {
+    Write-Host "[ADFT] No recently created accounts found in the selected scope." -ForegroundColor Yellow
+    return
+}
+
+Write-Host "`n[ADFT] Accounts created in the last $DaysBack day(s)" -ForegroundColor Cyan
+$recentUsers |
+    Sort-Object whenCreated -Descending |
+    Format-Table SamAccountName, whenCreated, Enabled, GroupCount -AutoSize
+
+if ($CsvPath) {
+    $recentUsers | Export-Csv -Path $CsvPath -NoTypeInformation -Encoding UTF8
+    Write-Host "[ADFT] Exported review to $CsvPath" -ForegroundColor Green
+}
+
+Write-Host "`n[ADFT] Follow-up actions:" -ForegroundColor Yellow
+Write-Host " - Validate owner / business justification" -ForegroundColor Yellow
+Write-Host " - Review privileged memberships separately if needed" -ForegroundColor Yellow
+Write-Host " - Investigate unexpected creation bursts or naming anomalies" -ForegroundColor Yellow
 """,
         "HARD-020": """
 Write-Host "[ADFT] Politique de mot de passe / verrouillage" -ForegroundColor Cyan
